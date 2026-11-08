@@ -2,6 +2,10 @@
 
 Open `index.html` in a browser to try the UI. The app has no build step or package dependencies. If your browser blocks local loading of the word-list files, serve this folder with any static HTTP server.
 
+## Mobile Install
+
+The app is a Progressive Web App. Host it over HTTPS, open it in Chrome on Android, then choose **Add to Home screen** or **Install app** from the browser menu. The service worker caches the app and both word lists for offline use. Opening `index.html` directly with a `file://` URL is useful for desktop testing, but does not enable PWA installation or offline caching.
+
 ## Word Data
 
 The bundled lists are a 2022 snapshot from the [3Blue1Brown Wordle data directory](https://github.com/3b1b/videos/tree/master/_2022/wordle/data):
